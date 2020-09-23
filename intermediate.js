@@ -1,3 +1,5 @@
+var howmanynights = prompt("How many nights"); 
+
 class Hotel {
 	hotelName;
 	numberOfNights;
@@ -12,10 +14,10 @@ class Hotel {
 	}
 	
 	printHotel(){
-		var howmanynights = document.getElementById("howmanynights").value 
+		
 
 
-		if (hotel1.numberOfNights > "howmanynights") {
+		if (hotel1.numberOfNights > Number(howmanynights)) {
 			document.getElementById("message").innerHTML = "I'll reserve";
 		}else {
 			document.getElementById("message").innerHTML = "Not available";
@@ -30,10 +32,3 @@ class Hotel {
 
 var hotel1 = new Hotel ("Hilton", Math.round(Math.random()*11), "Miami", "hotel.jfif");
 hotel1.printHotel();
-
-document.getElementById("result").addEventListener("click", Hotel, false);
-
-
-
-
-
